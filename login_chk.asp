@@ -14,7 +14,7 @@
 	pwd = request.Form("user_password")
 	
 	if user = "" or pwd = "" then
-		response.Write("账号或密码不能为空")
+		response.Write("账号或密码不能为空!!")
 	else
 	
 		set conn1=Server.CreateObject("ADODB.Connection")
