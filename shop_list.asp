@@ -1,5 +1,4 @@
-﻿<%@ LANGUAGE=VBScript CodePage=65001 %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,8 +27,8 @@
 		response.Write("用户名不存在，请重新输入")
 		response.redirect("login.asp")
 		else 
-			Mpwd=rs("password")						if Mpwd=pwd then					Response.Redirect "success.asp?id=2"
-				else				Response.Redirect "success.asp?id=3"
+			Mpwd=rs("password")						if Mpwd=pwd then				response.Write("succe!")
+				else				response.Write("fail")
 				end if
 		end if
 	end if
